@@ -1,0 +1,4 @@
+#!/bin/sh
+./rs485_test -d /dev/ttySC0 -s abcdefghigklmnopqrstuvwxyz -e &
+sleep 1
+./rs485_test -d /dev/ttySC1 -s 123456789abcdef -e
