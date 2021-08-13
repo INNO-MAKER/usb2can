@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UsbIO Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">InnoMakerUSB2CAN </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Your Company</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/UrbResetDevice:">- UrbResetDevice:</option>
+		
+		<option value="//api/name/UrbSetHostFormat:">- UrbSetHostFormat:</option>
+		
+		<option value="//api/name/UrbSetIdentityMode:identify:">- UrbSetIdentityMode:identify:</option>
+		
+		<option value="//api/name/UrbSetupDevice:mode:bittiming:">- UrbSetupDevice:mode:bittiming:</option>
+		
+		<option value="//api/name/_UrbSetBTConst:">- _UrbSetBTConst:</option>
+		
+		<option value="//api/name/_UrbSetDeviceConfig:">- _UrbSetDeviceConfig:</option>
+		
+		<option value="//api/name/_UrbSetTimeStamp:">- _UrbSetTimeStamp:</option>
+		
+		<option value="//api/name/_UrbSetupDevice:mode:bittming:">- _UrbSetupDevice:mode:bittming:</option>
+		
+		<option value="//api/name/asyncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">- asyncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</option>
+		
+		<option value="//api/name/asyncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">- asyncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</option>
+		
+		<option value="//api/name/bulkInAsync:andBuffer:andSize:andTimeOut:">- bulkInAsync:andBuffer:andSize:andTimeOut:</option>
+		
+		<option value="//api/name/bulkInSync:andBuffer:andSize:andTimeOut:">- bulkInSync:andBuffer:andSize:andTimeOut:</option>
+		
+		<option value="//api/name/bulkOutAsync:andBuffer:andSize:andTimeOut:">- bulkOutAsync:andBuffer:andSize:andTimeOut:</option>
+		
+		<option value="//api/name/closeInnoMakerDevice:">- closeInnoMakerDevice:</option>
+		
+		<option value="//api/name/getDllVersion">- getDllVersion</option>
+		
+		<option value="//api/name/getInnoMakerDevice:">- getInnoMakerDevice:</option>
+		
+		<option value="//api/name/getInnoMakerDeviceCount">- getInnoMakerDeviceCount</option>
+		
+		<option value="//api/name/openInnoMakerDevice:">- openInnoMakerDevice:</option>
+		
+		<option value="//api/name/scanInnoMakerDevices">- scanInnoMakerDevices</option>
+		
+		<option value="//api/name/syncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">- syncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</option>
+		
+		<option value="//api/name/syncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">- syncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UsbIO Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>UsbIO.h<br />UsbIO.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class          UsbIO</p>
+
+<p>Class : UsbIO
+Author : Inno-Maker
+Date: 07.20.2021
+Version : 1.2.0
+Routines to Proivde InnoMaker Client Device Applicate Interface</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getDllVersion" title="getDllVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDllVersion">&ndash;&nbsp;getDllVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get current dll verison</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getDllVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Dll version characters</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method     getDllVersion</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanInnoMakerDevices" title="scanInnoMakerDevices"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanInnoMakerDevices">&ndash;&nbsp;scanInnoMakerDevices</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Scan all the device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)scanInnoMakerDevices</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>kIOReturnSuccess , other fail</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    scan<a href="#//api/name/InnoMakerDevices">InnoMakerDevices</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInnoMakerDeviceCount" title="getInnoMakerDeviceCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInnoMakerDeviceCount">&ndash;&nbsp;getInnoMakerDeviceCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the amount of the devices</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)getInnoMakerDeviceCount</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The amount of the devices</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    getInnoMakerDeviceCount</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/asyncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:" title="asyncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/asyncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">&ndash;&nbsp;asyncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get buffer from the device async(will also call readDeviceDataNotify),pSize must equal or less than maxPipeIn size</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)asyncGetInnoMakerDeviceBuf:(InnoMakerDevice *)<em>dev</em> andBuffer:(Byte *)<em>buf</em> andSize:(UInt32)<em>pSize</em> andTimeOut:(UInt32)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>The device for getting buffer from</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buf</code></th>
+						<td><p>The buffer wanted to fill in</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pSize</code></th>
+						<td><p>It is the buffer in length</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>kIOReturnSuccess , other fail</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    getInnoMakerDeviceBuf:andBuffer:andSize:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/asyncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:" title="asyncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/asyncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">&ndash;&nbsp;asyncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send buffer to the device async(will also call writeDeviceDataNotify),pSize must equal or less than maxPipeOut size</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)asyncSendInnoMakerDeviceBuf:(InnoMakerDevice *)<em>dev</em> andBuffer:(Byte *)<em>buf</em> andSize:(UInt32)<em>pSize</em> andTimeOut:(UInt32)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>The device for sending buffer to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buf</code></th>
+						<td><p>The buffer wanted to send</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pSize</code></th>
+						<td><p>It is the buffer out length</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>kIOReturnSuccess , other fail</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    sendInnoMakerDeviceBuf:andBuffer:andSize:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInnoMakerDevice:" title="getInnoMakerDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInnoMakerDevice:">&ndash;&nbsp;getInnoMakerDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (InnoMakerDevice *)getInnoMakerDevice:(UInt8)<em>devIndex</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devIndex</code></th>
+						<td><p>The device index</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The destination device</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    get<a href="../Classes/InnoMakerDevice.html">InnoMakerDevice</a>:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/syncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:" title="syncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/syncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">&ndash;&nbsp;syncGetInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get buffer from the device sync (will also call readDeviceDataNotify),pSize must equal or less than maxPipeIn size</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)syncGetInnoMakerDeviceBuf:(InnoMakerDevice *)<em>dev</em> andBuffer:(Byte *)<em>buf</em> andSize:(UInt32)<em>pSize</em> andTimeOut:(UInt32)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>The device for getting buffer from</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buf</code></th>
+						<td><p>The buffer wanted to fill in</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pSize</code></th>
+						<td><p>It is the buffer in length</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>kIOReturnSuccess , other fail</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    getInnoMakerDeviceBuf:andBuffer:andSize:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/syncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:" title="syncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/syncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:">&ndash;&nbsp;syncSendInnoMakerDeviceBuf:andBuffer:andSize:andTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send buffer to the device sync (will also call writeDeviceDataNotify),pSize must equal or less than maxPipeOut size</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)syncSendInnoMakerDeviceBuf:(InnoMakerDevice *)<em>dev</em> andBuffer:(Byte *)<em>buf</em> andSize:(UInt32)<em>pSize</em> andTimeOut:(UInt32)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>The device for sending buffer to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buf</code></th>
+						<td><p>The buffer wanted to send</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pSize</code></th>
+						<td><p>It is the buffer out length</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>kIOReturnSuccess , other fail</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    sendInnoMakerDeviceBuf:andBuffer:andSize:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openInnoMakerDevice:" title="openInnoMakerDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openInnoMakerDevice:">&ndash;&nbsp;openInnoMakerDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open the device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)openInnoMakerDevice:(InnoMakerDevice *)<em>dev</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>The device wanted to open</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>true,Open success;false Open fail</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    open<a href="../Classes/InnoMakerDevice.html">InnoMakerDevice</a>:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeInnoMakerDevice:" title="closeInnoMakerDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeInnoMakerDevice:">&ndash;&nbsp;closeInnoMakerDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Close the device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)closeInnoMakerDevice:(InnoMakerDevice *)<em>dev</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>The device wanted to close</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>true, Close success ; false, Close fail</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method    close<a href="../Classes/InnoMakerDevice.html">InnoMakerDevice</a>:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Private Methods" name="task_Private Methods"></a>
+						<h2 class="task-title">Private Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/bulkInSync:andBuffer:andSize:andTimeOut:" title="bulkInSync:andBuffer:andSize:andTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bulkInSync:andBuffer:andSize:andTimeOut:">&ndash;&nbsp;bulkInSync:andBuffer:andSize:andTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Free od</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)bulkInSync:(InnoMakerDevice *)<em>device</em> andBuffer:(Byte *)<em>buf</em> andSize:(UInt32 *)<em>pSize</em> andTimeOut:(UInt32)<em>timeout</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Free od</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bulkInAsync:andBuffer:andSize:andTimeOut:" title="bulkInAsync:andBuffer:andSize:andTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bulkInAsync:andBuffer:andSize:andTimeOut:">&ndash;&nbsp;bulkInAsync:andBuffer:andSize:andTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Free od</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)bulkInAsync:(InnoMakerDevice *)<em>device</em> andBuffer:(Byte *)<em>buf</em> andSize:(UInt32)<em>size</em> andTimeOut:(UInt32)<em>timeout</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Free od</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bulkOutAsync:andBuffer:andSize:andTimeOut:" title="bulkOutAsync:andBuffer:andSize:andTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bulkOutAsync:andBuffer:andSize:andTimeOut:">&ndash;&nbsp;bulkOutAsync:andBuffer:andSize:andTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Free od</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IOReturn)bulkOutAsync:(InnoMakerDevice *)<em>device</em> andBuffer:(Byte *)<em>buf</em> andSize:(UInt32)<em>size</em> andTimeOut:(UInt32)<em>timeout</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Free od</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UsbIO.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="USBCan Methods" name="task_USBCan Methods"></a>
+						<h2 class="task-title">USBCan Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/UrbResetDevice:" title="UrbResetDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/UrbResetDevice:">&ndash;&nbsp;UrbResetDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Urb reset device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)UrbResetDevice:(InnoMakerDevice *)<em>device</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>target device</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Urb reset device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/UrbSetupDevice:mode:bittiming:" title="UrbSetupDevice:mode:bittiming:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/UrbSetupDevice:mode:bittiming:">&ndash;&nbsp;UrbSetupDevice:mode:bittiming:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Urb setup device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)UrbSetupDevice:(InnoMakerDevice *)<em>dev</em> mode:(UsbCanMode)<em>mode</em> bittiming:(struct innomaker_device_bittiming)<em>bittiming</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>target device</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mode</code></th>
+						<td><p>dev mode</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bittiming</code></th>
+						<td><p>bittiming</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Urb setup device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/UrbSetIdentityMode:identify:" title="UrbSetIdentityMode:identify:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/UrbSetIdentityMode:identify:">&ndash;&nbsp;UrbSetIdentityMode:identify:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Bitrate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)UrbSetIdentityMode:(InnoMakerDevice *)<em>device</em> identify:(struct innomaker_identify_mode)<em>imode</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set Bitrate</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/UrbSetHostFormat:" title="UrbSetHostFormat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/UrbSetHostFormat:">&ndash;&nbsp;UrbSetHostFormat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GS_USB_BREQ_MODE = 2</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)UrbSetHostFormat:(InnoMakerDevice *)<em>device</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>GS_USB_BREQ_MODE = 2</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_UrbSetupDevice:mode:bittming:" title="_UrbSetupDevice:mode:bittming:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_UrbSetupDevice:mode:bittming:">&ndash;&nbsp;_UrbSetupDevice:mode:bittming:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>启动设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_UrbSetupDevice:(InnoMakerDevice *)<em>dev</em> mode:(UsbCanMode)<em>mode</em> bittming:(struct innomaker_device_bittiming)<em>bittiming</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dev</code></th>
+						<td><p>指定设备</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>是否启动成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>启动设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_UrbSetTimeStamp:" title="_UrbSetTimeStamp:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_UrbSetTimeStamp:">&ndash;&nbsp;_UrbSetTimeStamp:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start Device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_UrbSetTimeStamp:(InnoMakerDevice *)<em>device</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Start Device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_UrbSetDeviceConfig:" title="_UrbSetDeviceConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_UrbSetDeviceConfig:">&ndash;&nbsp;_UrbSetDeviceConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GS_USB_BREQ_TIMESTAMP = 6</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_UrbSetDeviceConfig:(InnoMakerDevice *)<em>device</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>GS_USB_BREQ_TIMESTAMP = 6</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_UrbSetBTConst:" title="_UrbSetBTConst:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_UrbSetBTConst:">&ndash;&nbsp;_UrbSetBTConst:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GS_USB_BREQ_DEVICE_CONFIG = 5</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_UrbSetBTConst:(InnoMakerDevice *)<em>device</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>GS_USB_BREQ_DEVICE_CONFIG = 5</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">USBIO+USBCAN.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Your Company. All rights reserved. Updated: 2021-07-24</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
