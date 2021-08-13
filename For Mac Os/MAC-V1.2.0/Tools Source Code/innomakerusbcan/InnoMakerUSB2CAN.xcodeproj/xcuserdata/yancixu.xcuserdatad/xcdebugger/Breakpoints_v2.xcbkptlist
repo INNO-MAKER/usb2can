@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AFF602B6-91A6-4577-B005-79F58DB10B8D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02FE10C6-35D1-4458-B9A1-171200CB7B3A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InnoMakerUSB2CAN/Main/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "929"
+            endingLineNumber = "929"
+            landmarkName = "-sendToDevSustain:frameData:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "02FE10C6-35D1-4458-B9A1-171200CB7B3A - 97a5f19bc879f196"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController sendToDevSustain:frameData:]"
+                  moduleName = "InnoMakerUSB2CAN"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yancixu/Desktop/XuYanci/XY.Project/innomakerusbcan/InnoMakerUSB2CAN/Main/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "929"
+                  endingLineNumber = "929"
+                  offsetFromSymbolStart = "935">
+               </Location>
+               <Location
+                  uuid = "02FE10C6-35D1-4458-B9A1-171200CB7B3A - 176db024e6f12231"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45-[ViewController sendToDevSustain:frameData:]_block_invoke_2"
+                  moduleName = "InnoMakerUSB2CAN"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yancixu/Desktop/XuYanci/XY.Project/innomakerusbcan/InnoMakerUSB2CAN/Main/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "929"
+                  endingLineNumber = "929"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

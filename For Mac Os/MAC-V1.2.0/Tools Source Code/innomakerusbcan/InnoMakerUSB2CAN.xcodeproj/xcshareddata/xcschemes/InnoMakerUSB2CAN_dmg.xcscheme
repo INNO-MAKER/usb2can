@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1140"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;echo ${SRCROOT}&#10; &#10;# &#x521b;&#x5efa;resul&#x76ee;&#x5f55;&#10;RESULT_DIR=${SRCROOT}/result&#10;if [ -e ${RESULT_DIR} ] ;then&#10;rm -r ${RESULT_DIR}&#10;fi&#10;mkdir ${RESULT_DIR}&#10; &#10;echo &quot;Copy app to result dir&quot;&#10; &#10;# &#x62f7;&#x8d1d;&#x8d44;&#x6e90;&#x5230;result&#x76ee;&#x5f55;&#10;RESOURCE_DIR=${SRCROOT}/dmgResources&#10;cp -R ${RESOURCE_DIR}/ ${RESULT_DIR}/&#10; &#10;# &#x62f7;&#x8d1d;app&#x6587;&#x4ef6;&#x5230;result&#x76ee;&#x5f55;&#10;PRODUCT_NAME=InnoMakerUSB2CAN&#10;PRODUCT_APP=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app&#10;cp -R ${PRODUCT_APP} ${RESULT_DIR}/${PRODUCT_NAME}.app&#10; &#10; &#10;cd ${RESULT_DIR}&#10;# package dmg&#10;echo &quot;package dmg...&quot;&#10;appdmg appdmg.json ${PRODUCT_NAME}.dmg&#10; &#10;# remove no used files&#10;rm -rf *.app&#10;find . -type f -not -name &apos;*.dmg&apos; | xargs rm -rf&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "AD5CE7BD24370C8A00AE4665"
+                     BuildableName = "InnoMakerUSB2CAN.app"
+                     BlueprintName = "InnoMakerUSB2CAN"
+                     ReferencedContainer = "container:InnoMakerUSB2CAN.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD5CE7BD24370C8A00AE4665"
+               BuildableName = "InnoMakerUSB2CAN.app"
+               BlueprintName = "InnoMakerUSB2CAN"
+               ReferencedContainer = "container:InnoMakerUSB2CAN.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD5CE7BD24370C8A00AE4665"
+            BuildableName = "InnoMakerUSB2CAN.app"
+            BlueprintName = "InnoMakerUSB2CAN"
+            ReferencedContainer = "container:InnoMakerUSB2CAN.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD5CE7BD24370C8A00AE4665"
+            BuildableName = "InnoMakerUSB2CAN.app"
+            BlueprintName = "InnoMakerUSB2CAN"
+            ReferencedContainer = "container:InnoMakerUSB2CAN.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;echo ${SRCROOT}&#10; &#10;# &#x521b;&#x5efa;resul&#x76ee;&#x5f55;&#10;RESULT_DIR=${SRCROOT}/result&#10;if [ -e ${RESULT_DIR} ] ;then&#10;rm -r ${RESULT_DIR}&#10;fi&#10;mkdir ${RESULT_DIR}&#10; &#10;echo &quot;Copy app to result dir&quot;&#10; &#10;# &#x62f7;&#x8d1d;&#x8d44;&#x6e90;&#x5230;result&#x76ee;&#x5f55;&#10;RESOURCE_DIR=${SRCROOT}/dmgResources&#10;cp -R ${RESOURCE_DIR}/ ${RESULT_DIR}/&#10; &#10;# &#x62f7;&#x8d1d;app&#x6587;&#x4ef6;&#x5230;result&#x76ee;&#x5f55;&#10;PRODUCT_NAME=InnoMakerUSB2CAN&#10;PRODUCT_APP=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app&#10;cp -R ${PRODUCT_APP} ${RESULT_DIR}/${PRODUCT_NAME}.app&#10; &#10; &#10;cd ${RESULT_DIR}&#10;# package dmg&#10;echo &quot;package dmg...&quot;&#10;appdmg appdmg.json ${PRODUCT_NAME}.dmg&#10; &#10;# remove no used files&#10;rm -rf *.app&#10;find . -type f -not -name &apos;*.dmg&apos; | xargs rm -rf&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+   </ArchiveAction>
+</Scheme>
