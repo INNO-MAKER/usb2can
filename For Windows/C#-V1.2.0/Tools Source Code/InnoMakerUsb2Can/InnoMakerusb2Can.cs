@@ -532,13 +532,13 @@ namespace InnoMakerUsb2Can
 
                 return;
             }
-            /// Reset current device tx_context (这个不应该暴露，后续更改)
+            /// Reset current device tx_context  
             for (int i = 0; i < UsbCan.innomaker_MAX_TX_URBS; i++)
             {
                 can.tx_context[i] = new UsbCan.innomaker_tx_context();
                 can.tx_context[i].echo_id = UsbCan.innomaker_MAX_TX_URBS;
             }
-        
+
             startRecvTimerThread();
             startWorkerThread();
             OpenDeviceBtn.Tag = 1;
@@ -785,7 +785,7 @@ namespace InnoMakerUsb2Can
             for (int i = 0; i < usbIO.getInnoMakerDeviceCount(); i++)
             {
                 InnoMakerDevice device = usbIO.getInnoMakerDevice(i);
-                devIndexes.Add(device.deviceName);
+                devIndexes.Add(device.deviceId);
             }
 
             DeviceComboBox.DataSource = devIndexes;
