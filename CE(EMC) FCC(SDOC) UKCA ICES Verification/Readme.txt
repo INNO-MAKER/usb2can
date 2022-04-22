@@ -1,0 +1,1 @@
+If you need the detail test report please e-mail to support@inno-maker.com and attached your order screenshots.
