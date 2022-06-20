@@ -224,7 +224,7 @@
     <value>149, 12</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>发送间隔 (1ms-5000ms):</value>
+    <value>发送间隔 (0ms-5000ms):</value>
   </data>
   <data name="SendIntervalTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>392, 107</value>

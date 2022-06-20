@@ -76,10 +76,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\InnoMakerUsb2CanLib\bin\Debug\InnoMakerUsb2CanLib.dll</HintPath>
     </Reference>
-    <Reference Include="LibUsbDotNet.LibUsbDotNet, Version=2.2.0.0, Culture=neutral, PublicKeyToken=c677239abe1e02a9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\InnoMakerUsb2CanLib\bin\Debug\LibUsbDotNet.LibUsbDotNet.dll</HintPath>
-    </Reference>
     <Reference Include="NPOI, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
       <HintPath>packages\NPOI.2.5.1\lib\net45\NPOI.dll</HintPath>
     </Reference>

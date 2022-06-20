@@ -155,12 +155,14 @@ namespace InnoMakerUsb2Can
         private Thread sendThread;
         private Thread recvThread;
         private Thread workerThread;
-        int txNum = 0;
-        int rxNum = 0;
-        int rxErrorNum = 0;
+        uint txNum = 0;
+        uint rxNum = 0;
+        uint rxErrorNum = 0;
         private bool sendThreadExitFlag;
         private bool recvThreadExitFlag;
         private bool workerThreadExitFlag;
+      
+      
         ConcurrentQueue<Byte[]> recvBufQueue = new ConcurrentQueue<Byte[]>();
         List<Byte[]> recBufList = new List<Byte[]>();
 
@@ -173,6 +175,8 @@ namespace InnoMakerUsb2Can
             InitializeComponent();
         }
 
+
+       
 
 
         private void InnoMakerusb2Can_Load(object sender, EventArgs e)
@@ -192,7 +196,7 @@ namespace InnoMakerUsb2Can
 
 
             checkIdType = CheckIDType.CheckIDTypeNone;
-            checkErrorFrame = CheckErrorFrame.CheckErrorFrameClose;
+            checkErrorFrame = CheckErrorFrame.CheckErrorFrameOpen;
 
             NumberSendTextBox.Text = "1";
             SendIntervalTextBox.Text = "1000";
@@ -431,6 +435,7 @@ namespace InnoMakerUsb2Can
             rxNum = 0;
             txNum = 0;
             rxErrorNum = 0;
+         
         }
 
 
@@ -854,6 +859,7 @@ namespace InnoMakerUsb2Can
             while (!sendThreadExitFlag)
             {
                 sendToDev(null, null);
+              
                 Thread.Sleep(interval);
 
             }
@@ -933,12 +939,12 @@ namespace InnoMakerUsb2Can
 
             int interval = int.Parse(SendIntervalTextBox.Text);
 
-            if (interval < 1 || interval > 5000)
+            if (interval < 0 || interval > 5000)
             {
                 return;
             }
 
-            if (int.Parse(NumberSendTextBox.Text) < 1 || int.Parse(NumberSendTextBox.Text) > 5000000)
+            if (int.Parse(NumberSendTextBox.Text) <01 || int.Parse(NumberSendTextBox.Text) > 5000000)
             {
                 return;
             }
@@ -1125,6 +1131,7 @@ namespace InnoMakerUsb2Can
                         }
 
                         this.listView.BeginUpdate();
+                      
                         this.listView.Items.AddRange(addListItems.ToArray());
                         this.listView.EndUpdate();
                         SendMessage(listView.Handle, WM_VSCROLL, SB_BOTTOM, 0);
@@ -1282,7 +1289,20 @@ namespace InnoMakerUsb2Can
                 {
  
                     recv_buf_lock.Enter(ref _lock);
- 
+
+                    /// Check if it is error frame ,if you do not want to receive error frame, you can refer to this example
+                    /// Too many error frame will eating up the memory in your applcation, especially usb2can in bus-off state(not connect to the CAN-Bus)
+                    /// 
+                    /*  
+                    UInt32 frameId = BitConverter.ToUInt32(inputBytes, 4);
+                    /// If it is not an error frame
+                    if ((frameId & usbIO.Can_Err_Flag) == 0x00)
+                    {
+                        recBufList.Add(inputBytes);
+                    } 
+                    */
+
+
                     recBufList.Add(inputBytes);
                 }
                 finally
@@ -1396,7 +1416,7 @@ namespace InnoMakerUsb2Can
             if (echoId == 0xffffffff)
             {
                 /// Hide error frame (Little Endian)
-                if ((frameId & 0x00000020) == 0x20000000 && checkErrorFrame == CheckErrorFrame.CheckErrorFrameOpen)
+                if ((frameId & usbIO.Can_Err_Flag) != 0x00 && checkErrorFrame == CheckErrorFrame.CheckErrorFrameOpen)
                 {
                     return null;
                 }
@@ -1415,10 +1435,13 @@ namespace InnoMakerUsb2Can
                 lvi.SubItems.Add(frameLengthStr);
                 lvi.SubItems.Add(frameDataStr);
 
+                
+        
                 /// If Error Frame
                 if ((frameId & usbIO.Can_Err_Flag) != 0x00)
                 {
-                  
+                
+                   
                     if (currentLanguage == SystemLanguage.ChineseLanguage)
                     {
                         directionStr = "接受錯誤[" + rxErrorNum++.ToString() + "]";
@@ -1469,9 +1492,12 @@ namespace InnoMakerUsb2Can
                         }
 
                     }
+
+                   
                 }
                 else
                 {
+            
                     lvi.SubItems.Add("Success");
                     rxNum++;
                 }
@@ -1879,6 +1905,18 @@ namespace InnoMakerUsb2Can
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InnoMakerusb2Can_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //It is very important to close device before force close the tools 
+            //Otherwise the WinUsb will not released the usb2can device handle. It's only re-plug to solve this probem.
+            _closeDevice();
         }
     }
 }

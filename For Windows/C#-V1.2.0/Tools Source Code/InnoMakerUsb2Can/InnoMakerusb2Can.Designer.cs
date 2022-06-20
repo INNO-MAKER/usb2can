@@ -183,9 +183,7 @@ namespace InnoMakerUsb2Can
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.FrameIdTextBox = new InnoMakerUsb2Can.TextBoxEx();
-            this.DataTextBox = new InnoMakerUsb2Can.TextBoxEx();
-            this.listView = new ListViewEx();
+            this.listView = new InnoMakerUsb2Can.ListViewEx();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -196,6 +194,8 @@ namespace InnoMakerUsb2Can
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.FrameIdTextBox = new InnoMakerUsb2Can.TextBoxEx();
+            this.DataTextBox = new InnoMakerUsb2Can.TextBoxEx();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -332,6 +332,8 @@ namespace InnoMakerUsb2Can
             // HideErrorFrameCheckBox
             // 
             resources.ApplyResources(this.HideErrorFrameCheckBox, "HideErrorFrameCheckBox");
+            this.HideErrorFrameCheckBox.Checked = true;
+            this.HideErrorFrameCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.HideErrorFrameCheckBox.Name = "HideErrorFrameCheckBox";
             this.HideErrorFrameCheckBox.UseVisualStyleBackColor = true;
             this.HideErrorFrameCheckBox.CheckedChanged += new System.EventHandler(this.HideErrorFrameCheckBox_CheckedChanged);
@@ -392,22 +394,6 @@ namespace InnoMakerUsb2Can
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // FrameIdTextBox
-            // 
-            resources.ApplyResources(this.FrameIdTextBox, "FrameIdTextBox");
-            this.FrameIdTextBox.Name = "FrameIdTextBox";
-            this.FrameIdTextBox.TextChanged += new System.EventHandler(this.FrameIdTextBox_TextChanged);
-            this.FrameIdTextBox.MouseEnter += new System.EventHandler(this.FrameIdMouseEnter);
-            this.FrameIdTextBox.MouseLeave += new System.EventHandler(this.FrameIdMouseLeave);
-            // 
-            // DataTextBox
-            // 
-            resources.ApplyResources(this.DataTextBox, "DataTextBox");
-            this.DataTextBox.Name = "DataTextBox";
-            this.DataTextBox.TextChanged += new System.EventHandler(this.DataTextBox_TextChanged);
-            this.DataTextBox.MouseEnter += new System.EventHandler(this.DateTextBoxMouseEnter);
-            this.DataTextBox.MouseLeave += new System.EventHandler(this.DateTextBoxMouseLeave);
-            // 
             // listView
             // 
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -426,6 +412,7 @@ namespace InnoMakerUsb2Can
             this.listView.Name = "listView";
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
+            this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -466,6 +453,22 @@ namespace InnoMakerUsb2Can
             // columnHeader10
             // 
             resources.ApplyResources(this.columnHeader10, "columnHeader10");
+            // 
+            // FrameIdTextBox
+            // 
+            resources.ApplyResources(this.FrameIdTextBox, "FrameIdTextBox");
+            this.FrameIdTextBox.Name = "FrameIdTextBox";
+            this.FrameIdTextBox.TextChanged += new System.EventHandler(this.FrameIdTextBox_TextChanged);
+            this.FrameIdTextBox.MouseEnter += new System.EventHandler(this.FrameIdMouseEnter);
+            this.FrameIdTextBox.MouseLeave += new System.EventHandler(this.FrameIdMouseLeave);
+            // 
+            // DataTextBox
+            // 
+            resources.ApplyResources(this.DataTextBox, "DataTextBox");
+            this.DataTextBox.Name = "DataTextBox";
+            this.DataTextBox.TextChanged += new System.EventHandler(this.DataTextBox_TextChanged);
+            this.DataTextBox.MouseEnter += new System.EventHandler(this.DateTextBoxMouseEnter);
+            this.DataTextBox.MouseLeave += new System.EventHandler(this.DateTextBoxMouseLeave);
             // 
             // InnoMakerusb2Can
             // 
@@ -509,6 +512,7 @@ namespace InnoMakerUsb2Can
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "InnoMakerusb2Can";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InnoMakerusb2Can_FormClosing);
             this.Load += new System.EventHandler(this.InnoMakerusb2Can_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -552,8 +556,6 @@ namespace InnoMakerUsb2Can
         private System.Windows.Forms.Label label13;
         private ToolTip toolTip1;
         private PictureBox pictureBox1;
-    
-        private ListView listView;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
@@ -564,6 +566,7 @@ namespace InnoMakerUsb2Can
         private ColumnHeader columnHeader8;
         private ColumnHeader columnHeader9;
         private ColumnHeader columnHeader10;
+        private ListViewEx listView;
     }
 }
 
