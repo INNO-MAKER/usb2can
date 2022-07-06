@@ -30,8 +30,8 @@ os.system('sudo ifconfig can0 up')
 os.system('sudo ip link set can1 type can bitrate 1000000')
 os.system('sudo ifconfig can1 up')
 
-can0 = can.interface.Bus(channel = 'can0', bustype = 'socketcan_ctypes')
-can1 = can.interface.Bus(channel = 'can1', bustype = 'socketcan_ctypes')
+can0 = can.interface.Bus(channel = 'can0', bustype = 'socketcan')
+can1 = can.interface.Bus(channel = 'can1', bustype = 'socketcan')
 
 def rs485_enable():
 ##  CAN0 SEND AND CAN1 RECEIVE    
