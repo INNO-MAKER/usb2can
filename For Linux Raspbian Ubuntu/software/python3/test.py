@@ -1,73 +1,74 @@
-##############################################################################
+#############################################################################################################
 
 ## Description :  This codes is for test two USB2CAN module commuincation
 ##                on one Raspberry Pi.        
-##                CAN0 send "0x55, 0xaa, 0x5a,0xa5" to CAN1
-##                After that, CAN1 will "0x55, 0xaa, 0x5a,0xa5" to CAN0
-##                Finally, Print the test result
+##                CAN0 send base frame/extended frame/remote frame
+##                CAN1 receivd frame and print         
 
 ## Author      :  Calvin (calvin@inno-maker.com)/ www.inno-maker.com
               
                 
-## Date        :  2019.11.30
+## Date        :  2022.08.01
 
 ## Environment :  Hardware            ----------------------  Raspberry Pi 4
-##                SYstem of RPI       ----------------------  2019-09-26-raspbian-buster-full.img
+##                SYstem of RPI       ----------------------  2022-04-04-raspbian-buster-full.img 64 bit
 ##                Version of Python   ----------------------  Python 3.7.3(Default in the system)
 ## Toinstall dependencies:
-## sudo pip install python-can
+## sudo pip3 install python-can
 
-
-###############################################################################
+#############################################################################################################
 import os
 import can
 
-#Set CAN0 speed to 1M bps
-os.system('sudo ip link set can0 type can bitrate 1000000')
-os.system('sudo ifconfig can0 up')
+def can_test():
+    #Set CAN0 speed to 1M bps
+    os.system('sudo ifconfig can0 down')
+    os.system('sudo ip link set can0 type can bitrate 1000000')
+    os.system("sudo ifconfig can0 txqueuelen 100000")
+    os.system('sudo ifconfig can0 up')
 
-#Set CAN1 speed to 1M bps
-os.system('sudo ip link set can1 type can bitrate 1000000')
-os.system('sudo ifconfig can1 up')
-
-can0 = can.interface.Bus(channel = 'can0', bustype = 'socketcan')
-can1 = can.interface.Bus(channel = 'can1', bustype = 'socketcan')
-
-def rs485_enable():
-##  CAN0 SEND AND CAN1 RECEIVE    
-    msg = can.Message(arbitration_id=0x123, data=[0x55,0xaa,0x5a,0xa5])
-
-    can0.send(msg)
-
-    msg = can1.recv(10.0)
-
-    if((msg.data[0]==0x55)and(msg.data[1]==0xaa)and
-       (msg.data[2]==0x5a)and(msg.data[3]==0xa5)):
-    ##  CAN1 SEND AND CAN0 RECEIVE     
-        msg = can.Message(arbitration_id=0x123, data=[0x55,0xaa,0x5a,0xa5])
-
-        print(msg)
-        can1.send(msg)
-        msg = can0.recv(30.0)
-        if((msg.data[0]==0x55)and(msg.data[1]==0xaa)and(msg.data[2]==0x5a)and(msg.data[3]==0xa5)):
-            print(msg)
-            print('Both USB2CAN module communication test successful')
-        elif msg is None:    ## No data
-            print('Timeout USB2CAN module test failure.\r\n'*3)
-        else :
-            print('Data validation errors\r\n'*3)
-            print(msg)                       ##print the err data
-        
-    elif msg is None: ## No data
-        print('Timeout USB2CAN module test failure.\r\n'*3)
-    else :     ##print the err data
-        print('Data validation errors\r\n'*3)
-        print(msg)      
+    #Set CAN1 speed to 1M bps
+    os.system('sudo ifconfig can1 down')
+    os.system('sudo ip link set can1 type can bitrate 1000000')
+    os.system("sudo ifconfig can1 txqueuelen 100000")
+    os.system('sudo ifconfig can1 up')
     
-if __name__ == '__main__':
-    rs485_enable()
-
+    can0 = can.interface.Bus(channel = 'can0', bustype = 'socketcan')
+    can1 = can.interface.Bus(channel = 'can1', bustype = 'socketcan')
+    
+    ##  CAN0 send Base frame , CAN 1 receive this frame and print.     
+    sff_frame = can.Message(arbitration_id=0x123, data=[0,1,2,3,4,5,6,7])
+    can0.send(sff_frame)
+    msg = can1.recv(10.0)
+    if msg is None:
+        print("USB2CAN hardware connection failure.")
+    else:
+        print(f"Received base frame: \n{msg}\n")
+    ######################################################################    
+    ##  CAN0 send extended frame, CAN 1 receive this frame and print. 
+    eff_frame = can.Message(arbitration_id=0x1FFF6666, data=[7,6,5,4,3,2,1,0],is_extended_id = True)
+    can0.send(eff_frame)
+    msg = can1.recv(10.0)
+    if msg is None:
+        print("USB2CAN hardware connection failure.")
+    else:
+        print(f"Received extended frame: \n{msg}\n")
+    ######################################################################    
+    ##CAN0 send remote frame, CAN 1 receive this frame and print.
+    rtr_frame = can.Message(arbitration_id=0x321, data=[0,1,2,3,4,5,6,7],is_remote_frame = True)    
+    can0.send(rtr_frame)
+    msg = can1.recv(10.0)
+    if msg is None:
+        print("USB2CAN hardware connection failure.")
+    else:
+        print(f"Received remote frame: \n{msg}\n")    
+    ###################################################################### 
     os.system('sudo ifconfig can1 down')
     os.system('sudo ifconfig can0 down')
+    
+    
+if __name__ == '__main__':
+    can_test()
+
 
 
