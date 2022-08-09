@@ -1,4 +1,4 @@
-# This link is for below USB2CANseries products:
+# This link is for below USB2CAN series products:
 ![](https://github.com/INNO-MAKER/Images-Folder/blob/main/USB2CAN%20Family.jpg)
 
 
