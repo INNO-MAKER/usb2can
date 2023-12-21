@@ -83,7 +83,7 @@ def main():
     #dev.stop()
 
     # Configuration Modify the Baudrate you want here
-    if not dev.set_bitrate(1000000):
+    if not dev.set_bitrate(250000):
         print("Can not set bitrate for gs_usb")
         return
 
