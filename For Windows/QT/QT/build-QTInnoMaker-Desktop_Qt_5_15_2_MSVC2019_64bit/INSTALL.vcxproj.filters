@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\CMakeFiles\6d41501963efe00f5a4861c12c0bdd3b\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5DD8A6BF-FEC9-3F14-B2FA-9FDD4E0E7CD9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

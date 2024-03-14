@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\delay_sender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\formatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\worker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\DeviceHotplug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\delay_sender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\formatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\worker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\DeviceHotplug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\include_Debug\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\include_Release\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\include_MinSizeRel\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\include_RelWithDebInfo\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\CMakeFiles\8e3246c2d71d42d8a249b907e1642eab\QTInnoMaker_en_AS.ts.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\CMakeFiles\d5f77cc11943183f6ef969f974959d4f\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\mainwindow.ui" />
+    <None Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\QTInnoMaker_en_AS.ts" />
+    <None Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\autouic_Debug.stamp" />
+    <None Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\autouic_Release.stamp" />
+    <None Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_64bit\QTInnoMaker_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5DD8A6BF-FEC9-3F14-B2FA-9FDD4E0E7CD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{557C961D-485F-39C2-B408-D0C62E35E9B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{75C4A0E0-94B3-3CB0-9E8D-AF335323E5A8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

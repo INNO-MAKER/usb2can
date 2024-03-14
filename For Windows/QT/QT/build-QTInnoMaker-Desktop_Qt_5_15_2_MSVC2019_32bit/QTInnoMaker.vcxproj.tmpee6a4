@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4EBB601D-BBFB-3508-81BF-17941F1AC3C2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>QTInnoMaker</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QTInnoMaker.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QTInnoMaker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QTInnoMaker.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QTInnoMaker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">QTInnoMaker.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">QTInnoMaker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">QTInnoMaker.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">QTInnoMaker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_Debug;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_QML_DEBUG;WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;QT_QML_DEBUG;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_Debug;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_Debug;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target QTInnoMaker</Message>
+      <Command>setlocal
+cd D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/QTInnoMaker_autogen/autouic_Debug.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>InnoMakerUsb2CANLib.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Widgetsd.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Guid.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Cored.lib;D:\Qt\5.15.2\msvc2019\lib\qtmaind.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64;D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/Debug/QTInnoMaker.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/Debug/QTInnoMaker.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_Release;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_QML_DEBUG;WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;QT_QML_DEBUG;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_Release;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_Release;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target QTInnoMaker</Message>
+      <Command>setlocal
+cd D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/QTInnoMaker_autogen/autouic_Release.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>InnoMakerUsb2CANLib.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Widgets.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Gui.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Core.lib;D:\Qt\5.15.2\msvc2019\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64;D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/Release/QTInnoMaker.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/Release/QTInnoMaker.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_MinSizeRel;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_QML_DEBUG;WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;QT_QML_DEBUG;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_MinSizeRel;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_MinSizeRel;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target QTInnoMaker</Message>
+      <Command>setlocal
+cd D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/QTInnoMaker_autogen/autouic_MinSizeRel.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>InnoMakerUsb2CANLib.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Widgets.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Gui.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Core.lib;D:\Qt\5.15.2\msvc2019\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64;D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/MinSizeRel/QTInnoMaker.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/MinSizeRel/QTInnoMaker.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_RelWithDebInfo;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_QML_DEBUG;WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;QT_QML_DEBUG;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_RelWithDebInfo;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\include_RelWithDebInfo;D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\libInnoMakerUsb2Can\include;D:\Qt\5.15.2\msvc2019\include;D:\Qt\5.15.2\msvc2019\include\QtWidgets;D:\Qt\5.15.2\msvc2019\include\QtGui;D:\Qt\5.15.2\msvc2019\include\QtANGLE;D:\Qt\5.15.2\msvc2019\include\QtCore;D:\Qt\5.15.2\msvc2019\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target QTInnoMaker</Message>
+      <Command>setlocal
+cd D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/QTInnoMaker_autogen/autouic_RelWithDebInfo.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>InnoMakerUsb2CANLib.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Widgets.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Gui.lib;D:\Qt\5.15.2\msvc2019\lib\Qt5Core.lib;D:\Qt\5.15.2\msvc2019\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64;D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/libInnoMakerUsb2Can/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/RelWithDebInfo/QTInnoMaker.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/RelWithDebInfo/QTInnoMaker.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\CMakeFiles\8e3246c2d71d42d8a249b907e1642eab\QTInnoMaker_en_AS.ts.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\Qt\5.15.2\msvc2019\bin\lupdate.exe @D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_en_AS.ts_lst_file -ts D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\QTInnoMaker_en_AS.ts</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\Qt\5.15.2\msvc2019\bin\lupdate.exe @D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_en_AS.ts_lst_file -ts D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\QTInnoMaker_en_AS.ts</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\Qt\5.15.2\msvc2019\bin\lupdate.exe @D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_en_AS.ts_lst_file -ts D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\QTInnoMaker_en_AS.ts</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\Qt\5.15.2\msvc2019\bin\lupdate.exe @D:/XuYANCI/XuYanci/Project/QTInnoMaker/build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit/CMakeFiles/QTInnoMaker_en_AS.ts_lst_file -ts D:/XuYANCI/XuYanci/Project/QTInnoMaker/QTInnoMaker/QTInnoMaker_en_AS.ts
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\QTInnoMaker_en_AS.ts</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\CMakeFiles\e94f3e4869d74051e9c1396601574151\autouic_(CONFIG).stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\mainwindow.ui;D:\Qt\5.15.2\msvc2019\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\mainwindow.ui;D:\Qt\5.15.2\msvc2019\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMaker_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\QTInnoMaker\mainwindow.ui;D:\Qt\5.15.2\msvc2019\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\XuYANCI\XuYanci\Project\QTInnoMaker\build-QTInnoMaker-Desktop_Qt_5_15_2_MSVC2019_32bit\QTInnoMake
